@@ -1,0 +1,23 @@
+......................Start of scope Func........................................
+Function   Object       return
+
+also        it           context obj (call varibale outside scope)
+apply       this         context obj (call varibale outside scope)
+
+let         it           lambda result (get access of class outside scope not its variable)
+run         this         lambda result  (get access of class outside scope not its variable)
+with        this         lambda result (get access of class outside scope not its variable)
+
+............................................................
+Main Diff :
+1. way they refer to context object
+2. return value
+context object -> this , it
+..........................................................
+
+ALso: takes context object as ref , used when we donot want to use this ref inside or outside
+Apply :used for more complex chaining , donot return value , used to do operations on member obj.
+let: used when we want to print result from 2 or more funcions
+Run : (2 opeations) : can intialise values and return last line result
+With : object passed as argument ,can perform operation on it , cannot return result
+...........................End of Scope Func......................................
